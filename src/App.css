@@ -1,13 +1,25 @@
+.app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pane {
+    overflow: hidden;
+}
+
 .top-pane{
     background-color: hsl(225,6%,25%);
-    height: 60vh;
+    height: 50vh;
     display: flex;
     width: 100%;  
 }
+
 .bottom-pane{
-    min-height: 50vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 
@@ -51,6 +63,9 @@
  
 
 .our-canvas{
+    width: 100%;
+    min-height: 100vh;
     height: 100%;
-    flex-grow: 1;
+    border: none;
+    display: block;
 }
